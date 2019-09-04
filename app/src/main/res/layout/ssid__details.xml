@@ -1,0 +1,103 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="org.idea.net.lbpms.AddDeptWifiFragment"
+    android:keepScreenOn="true"
+    >
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Info"
+        android:textSize="25dp"
+        android:padding="2dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/emp_name"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today Date"
+        android:textSize="22dp"
+        android:layout_below="@+id/emp_name"
+        android:padding="2dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/date"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Today Active Time"
+        android:textSize="20dp"
+        android:layout_below="@+id/date"
+        android:padding="2dp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/activeTime"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time In:"
+        android:textStyle="bold"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+        android:layout_below="@+id/activeTime"
+        android:id="@+id/checkintime"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Time Out:"
+        android:textStyle="bold"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="6dp"
+
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/activeTime"
+        android:id="@+id/checkouttime"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/presence_state"
+        android:text="Test Case"
+        android:textAlignment="center"
+       android:layout_below="@+id/checkintime"
+        android:layout_marginTop="7dp"
+        style="@style/TitleRow"
+        android:layout_centerHorizontal="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="00:00:00"
+        android:textSize="50dp"
+        android:textStyle="bold"
+        android:id="@+id/time"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+        android:layout_below="@+id/presence_state"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Location"
+
+        android:textSize="15dp"
+        android:id="@+id/location"
+      android:layout_below="@+id/time"
+        android:layout_centerHorizontal="true"/>
+    <ListView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/location"
+        android:id="@+id/idlistview"/>
+
+    <!--<Button-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:id="@+id/btnscan"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:text="Check Out"/>-->
+</RelativeLayout>
